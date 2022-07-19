@@ -54,8 +54,8 @@ HTML semantico
 Etiquetas de HTML más usadas
 
 ETIQUETAS INICIALES O DE RAÍZ
-    <!DOCTYPE html> Indica al navegador que el documento está basado en el estándar HTML5
-    <html> </html> Representa la raíz de un documento HTML. Todos los demás elementos de la estructura HTML deben ser recogidos dentro de estas etiquetas.
+    '<!DOCTYPE html>' Indica al navegador que el documento está basado en el estándar HTML5
+    '<html> </html>' Representa la raíz de un documento HTML. Todos los demás elementos de la estructura HTML deben ser recogidos dentro de estas etiquetas.
 
 METADATOS DEL DOCUMENTO
     <head> </head> Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo. El resto de etiquetas de metadatos, irán recogidas dentro de las etiquetas de apertura y cierre del head. Importante explicar que estos metadatos del documento, es información para el navegador y no contenido que será visible en la página web. A excepción de la etiqueta <title> que veremos a continuación.
