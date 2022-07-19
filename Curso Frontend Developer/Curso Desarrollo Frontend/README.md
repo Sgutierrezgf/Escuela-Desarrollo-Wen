@@ -24,19 +24,17 @@ Anatomía de un documento HTML y sus elementos
 Básicamente una etiqueta representa un elemento de nuestro HTML. ¿Recuerdas cuando te dije que trabajar con HTML era decirle al navegador que agregue cualquier cosa que nosotros queramos? Bueno, eso se lo decimos por medio de etiquetas 7u7.
 .
 Como ya sabes, una etiqueta representa cualquier cosa que nosotros queramos agregar, pero esta etiqueta también puede tener atributos, pero… ¿Qué son los atributos? ¡Inventémonos una etiqueta! La etiqueta michi 👇:
-.
+
 <michi>Retax</michi>
-.
+
 Imagina que nuestra etiqueta inventada es capaz de pintar un michi en nuestra página web, ¡pero un michi puede ser de distintas formas! Por ejemplo, podemos tener michis blancos, negros, con rayitas, grandes, pequeños, tranquilos, etc. Entonces esas características las podríamos definir con los atributos, por ejemplo:
-.
+
 <michi color="blanco" con-rayitas="sí" tamaño="pequeño" posicion="acostado">Retax</michi>
 
 ❗ La etiqueta <michi> no existe en HTML, fue usada para fines prácticos, no intente usarla.
 
 En HTML tenemos algunas etiquetas que pueden actuar como cajas, ¡sí!, puedes imaginártelas como cajitas. Entonces ahí dentro podemos meter más etiquetas HTML (y sí, así como las cajas de Amazon, también puedes meter cajas dentro de otras cajas 😏)
-.
-cajita
-.
+
 Por ejemplo, la etiqueta <section> puede actuar como una caja, ¡pero la etiqueta <ul> también puede actuar como una caja! ¿Por qué tenemos tantas cajas? 🤔 Bueno, es aquí donde entra el HTML semántico, lo cual lo verás en la próxima clase 👀👉
 
 HTML semantico
@@ -54,10 +52,13 @@ HTML semantico
 Etiquetas de HTML más usadas
 
 ETIQUETAS INICIALES O DE RAÍZ
-    '<!DOCTYPE html>' Indica al navegador que el documento está basado en el estándar HTML5
-    '<html> </html>' Representa la raíz de un documento HTML. Todos los demás elementos de la estructura HTML deben ser recogidos dentro de estas etiquetas.
+
+    <!DOCTYPE html> Indica al navegador que el documento está basado en el estándar HTML5.
+
+    <html> </html> Representa la raíz de un documento HTML. Todos los demás elementos de la estructura HTML deben ser recogidos dentro de estas etiquetas.
 
 METADATOS DEL DOCUMENTO
+
     <head> </head> Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo. El resto de etiquetas de metadatos, irán recogidas dentro de las etiquetas de apertura y cierre del head. Importante explicar que estos metadatos del documento, es información para el navegador y no contenido que será visible en la página web. A excepción de la etiqueta <title> que veremos a continuación.
     <title> </title> Etiqueta usada para definir el título de la página web.
     <link> Se usa para enlazar recursos externos al documento HTML. El ejemplo más común son las hojas de estilos CSS.
@@ -65,6 +66,7 @@ METADATOS DEL DOCUMENTO
     <style> </style> Etiquetas usadas para introducir código CSS en línea, es decir, en el propio documento HTML.
 
 ETIQUETAS DE SECCIONES O PARA ESTRUCTURAR EL HTML
+
     <body> </body> Al contrario que la etiqueta de metadatos <head>, todo lo que quieras mostrar en la página web debe ir recogido dentro de las etiquetas de apertura y cierre de <body>. Este contenido será el que se muestre en la web.
     <nav> </nav> Usadas para definir el contenido que será la sección de navegación de la web.
     <main> </main> Se usa para definir el contenido principal del documento. Solamente puede existir uno por documento.
@@ -76,6 +78,7 @@ ETIQUETAS DE SECCIONES O PARA ESTRUCTURAR EL HTML
     <footer> </footer> Usadas para definir el pie de página.
 
 ETIQUETAS PARA LA AGRUPACIÓN DE CONTENIDO
+
     <p> </p> Etiqueta usada para escribir párrafos de texto.
     <hr> Etiqueta utilizada para «romper» entre dos secciones de una web. Usada comúnmente como separador.
     <pre> </pre> Usada para pegar texto manteniendo el pre formato propio del texto.
@@ -91,6 +94,7 @@ ETIQUETAS PARA LA AGRUPACIÓN DE CONTENIDO
     <div> </div> Etiqueta común utilizada para crear un contenedor genérico.
 
 ETIQUETAS SEMÁNTICAS PARA TEXTO
+
     <a> </a> Etiqueta utilizada para crear hiperenlaces en el documento HTML
     <strong> </strong> Etiqueta para definir una palabra o conjunto de ellas como importantes. Tiene una fuerte importancia en el SEO de la página.
     <small> </small> Utilizada para dejar un comentario aparte, del tipo una nota de derechos de autoría, u otros textos que no son esenciales para la comprensión del documento.
@@ -101,6 +105,7 @@ ETIQUETAS SEMÁNTICAS PARA TEXTO
     <br> Etiqueta utilizada para crear un salto de línea
 
 ETIQUETAS PARA INCRUSTAR CONTENIDO
+
     <img> Etiqueta para «pintar» una imagen en la página web.
     <iframe> </iframe> Es una etiqueta que sirve para anidar otro documento HTML dentro del documento principal.
     <embed> Usada para integrar una aplicación o contenido interactivo externo que no suele ser HTML.
@@ -121,6 +126,7 @@ ETIQUETAS PARA INCRUSTAR CONTENIDO
     <th> </th> Etiqueta que se usa para definir el encabezado de una celda
 
 ETIQUETAS PARA LA CREACIÓN DE FORMULARIOS
+
     <form> </form> Etiqueta de apertura y cierre de un formulario de una página web. El resto de etiquetas de formulario deben ir siempre recogidas entre estas etiquetas de apertura y cierre de formulario.
     <fieldset> </fieldset> Etiqueta que representa un conjunto o agrupación de elementos de un formulario. «Pinta» un recuadro alrededor de las etiquetas que estén contenidas dentro del <fieldset>
     <legend> </legend> Etiqueta ligada a <fieldset>. Indica el título del <fieldset>
