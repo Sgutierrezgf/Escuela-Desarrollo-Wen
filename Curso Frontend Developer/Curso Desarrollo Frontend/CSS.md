@@ -114,3 +114,98 @@ Cascada y especificidad en CSS
             .myClass.myClass span { color: orange; }
 
 Tipos de display más usados: block, inline e inline-block
+
+Display: Es el tipo de visualizaciopn que tienen los elementos
+
+Tipos de display
+
+    inline: Estos elementos son los que su caja mide exactamente lo mismo que su contenido. Estos elementos los podemos usar en textos y en lugar de que se agreguen en una nueva línea se agregaran justo al ladito del texto. ❗ Tienen como desventaja que no podemos ponerles márgenes ni tampoco podemos cambiar su tamaño.
+
+    block: Estos elementos ocupan toda la pantalla, por lo que si quieres agregar otro elemento, este se agregará automáticamente abajo. No importa que tengas poco contenido, el elemento sí o sí va a ocupar toda la pantalla.
+
+    inline-block: Esto mezcla lo mejor de ambos mundos. Con este display podemos tener tanto los beneficios de inline como de block, es decir, podemos tener elementos que no ocupen todo el ancho de la pantalla, sino que ocupen solamente lo que su contenido ocupa, pero también vamos a poder darle márgenes y podremos cambiar su tamaño 🤠.
+
+Otros tipos de display
+    Flexbox
+    CSS Grid
+
+Modelo de caja
+
+    Esto es un tema muy mindblow 🤯. Básicamente porque todo en HTML son cajitas, sí, incluso un texto es una caja. Cuando tú insertas un texto, lo que estás haciendo es que estás insertando una cajita que adentro tiene texto (y lo mismo aplica para cualquier etiqueta). Esta cajita tiene un fondo transparente, pero si tú le pones cualquier fondo usando la propiedad background podrás ver esa cajita. Esta cajita, además de su contenido, tiene estas 3 capas externas que serían el padding, el border y el margin 👇:
+
+    padding: Es básicamente el espaciado que hay entre la caja y el contenido de la caja, es un espaciado interno. Lo solemos usar mucho para permitir que los elementos “respiren”
+
+    border: Es el delineado que le podemos dar a una caja, y un borde puede ser tan grueso como quieras. Simplemente debemos ponerle el grosor, el tipo de borde y el color del borde, por ejemplo, podemos hacer una caja con bordes y líneas intermitentes OwO:
+
+    margin: Este es básicamente el espaciado entre elementos. Es la distancia que podemos dejar de un elemento hacia otro.
+    
+    Con estas capitas podemos conformar el modelo de caja 
+
+Colapso de margenes
+
+    sucede cuando hay 2 elementos bloque adyancentes
+    no sucede cuando flexbox, grid y elementos que no sean adyacentes.
+
+Posicionamiento
+
+    El tema de position es muy interesante porque es prácticamente otra forma que tenemos de posicionar con CSS 👀.
+
+    Usualmente es preferible trabajar con nuestras técnicas de alineamiento comunes como CSS Grid o Flexbox, pero suele haber casos donde sí o sí necesitamos usar position.
+    
+    El ejemplo más común es con el menú de navegación, que casi siempre solemos verlo en todas las páginas. Aunque también podríamos usarlos si queremos posicionar un elemento con base en otro (aquí es donde intervienen el relative con el absolute), y de hecho esta también es una técnica muy usada cuando se dibuja con CSS 7u7.
+
+    tipos de position
+
+        relative
+        absolute
+        fixed
+        sticky
+        static
+        initial
+        inherital
+
+Z-index y el contexto de apilamiento
+
+    Básicamente son capas que hay una encima de la otra, entonces a medida que vas poniendo más y más estas se van apilando.
+
+    Esto sucede cuando empezamos a hacer uso de position y es ahí en donde entra en juego la propiedad z-index, básicamente porque ahora estamos trabajando en el eje Z. El eje Z es el que va desde la pantalla hacia ti
+
+Propiedades y valores de CSS más usados
+
+    https://cssreference.io
+
+Unidades de medida
+
+    absolutas y relativas
+
+Responsive Design
+
+    Que tu sitio se vea bien en varias medidas de pantalla
+
+¿Qué son las arquitecturas CSS? ¿Para qué sirven?
+
+    Sirven para mantener un orden y una coherencia durante todo el proyecto. Tiene los siguientes objetivos:
+
+    Predecibles: escribir reglas claras.
+    Reutilizable: no escribir código redundante.
+    Mantenible: que sea fácil de leer y adaptable a los estándares.
+    Escalable: que pueda crecer fácilmente sin afectar el rendimiento.
+    
+    Estos objetivos se deben ver reflejadas en buenas practicas que debe conocer todo el equipo involucrado en el proyecto como:
+
+    Establecer reglas
+    Explicar la estructura base
+    Establecer estándares de codificación
+    Evitar largas hojas de estilo
+    Documentación
+
+OOCSS, BEM, SMACSS, ITCSS y Atomic Design
+
+    Las siguiente lecturas sirven para profundizar en cada metodología:
+
+    OOCSS(https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/#top)
+    BEM(https://en.bem.info/methodology/)
+    SMACSS(https://medium.com/@GreenXIII/organize-your-css-smacss-way-89c087db5092)
+    ITCSS(https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)
+    Atomic Design(https://bradfrost.com/blog/post/atomic-web-design/)
+    How to organize your CSS with OOCSS, BEM & SMACSS(https://intelygenz.medium.com/how-to-organize-your-css-with-oocss-bem-smacss-a2317fa083a7)
